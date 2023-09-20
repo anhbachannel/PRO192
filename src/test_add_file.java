@@ -1,15 +1,56 @@
+// Replace ___ with your code
 import java.util.Scanner;
 
-public class test_add_file {
-public static void main(String[] args) {
-	int a, b;
-	Scanner sc = new Scanner(System.in);
-	a = sc.nextInt();
-	b = sc.nextInt();
-	if(a>b) {
-		System.out.println("a lớn hơn b");
-	}else {
-		System.out.println("a bé hơn hoặc bằng b");
-	}
-}
+class  test_add_file {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        int month = input.nextInt();
+
+        switch (month) {
+    
+            // cases to print each month based on month
+
+            case 1: 
+                System.out.println("January");
+                break;
+            case 2: 
+                System.out.println("February");
+                break;
+            case 3: 
+                System.out.println("March");
+                break;
+            case 4: 
+                System.out.println("April");
+                break;
+            case 5: 
+                System.out.println("May");
+                break;
+            case 6: 
+                System.out.println("June");
+                break;
+            case 7: 
+                System.out.println("July");
+                break;
+            case 8: 
+                System.out.println("August");
+                break;
+            case 9: 
+                System.out.println("Septemper");
+                break;
+            case 10: 
+                System.out.println("October");
+                break;
+            case 11: 
+                System.out.println("November");
+                break;
+            case 12: 
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("Invalid Number");
+        }
+        input.close();
+    }
 }
